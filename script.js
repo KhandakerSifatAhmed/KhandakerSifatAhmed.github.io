@@ -84,6 +84,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- Optional: Dynamic Typing Effect for Hero Subtitle --- */
-    // Currently using CSS animation, falling back or augmenting with JS is possible here.
+    /* --- Theme Toggle (Dark Mode / Light Mode) --- */
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            themeToggleBtn.querySelector('i').className = 'fa-solid fa-sun';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const icon = themeToggleBtn.querySelector('i');
+            if (document.body.classList.contains('light-mode')) {
+                icon.className = 'fa-solid fa-sun';
+                localStorage.setItem('portfolio-theme', 'light');
+            } else {
+                icon.className = 'fa-solid fa-moon';
+                localStorage.setItem('portfolio-theme', 'dark');
+            }
+        });
+    }
 });

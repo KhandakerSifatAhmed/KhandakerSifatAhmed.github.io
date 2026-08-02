@@ -25,9 +25,14 @@
                 <li><a href="#education">Education & Certs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="nav-right">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -42,10 +47,10 @@
                 <span class="greeting">Hello, I'm</span>
                 <h1 class="hero-title">Khandaker Sifat Ahmed</h1>
                 <h2 class="hero-subtitle">
-                    <span class="typing-text">Electronics Student | Electrical Installation & Maintenance</span>
+                    <span class="typing-text">Electronics Engineering Student | Embedded Systems | Robotics &amp; IoT Enthusiast</span>
                 </h2>
                 <p class="hero-intro">
-                    An aspiring electronics specialist with a profound interest in practical electrical systems. Driven by technical skills, I am constantly learning and troubleshooting to master the core principles of electrical engineering.
+                    Passionate about electronics, embedded systems, and robotics, I enjoy transforming ideas into practical solutions through innovation, creativity, and continuous learning.
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">Connect With Me <i class="fa-regular fa-paper-plane"></i></a>
@@ -71,8 +76,7 @@
             <h2 class="section-title fade-in-up">About Me</h2>
             <div class="about-grid">
                 <div class="about-text fade-in-up">
-                    <p>I am currently a <strong>5th Semester</strong> student in the <strong>Electronics Department</strong> at <strong>Dhaka Polytechnic Institute</strong>. Previously, I established my foundational knowledge at <strong>Motijheel Government Boys' High School</strong>.</p>
-                    <p>My passion lies deep within <strong>electrical installation, maintenance</strong>, and hands-on technical skills. I pride myself on bridging the gap between theoretical electronic concepts and practical, real-world troubleshooting.</p>
+                    <p>I am a Diploma student in <strong>Electronics Engineering</strong> with a strong passion for <strong>embedded systems, robotics, and automation</strong>. I enjoy designing electronic circuits, programming microcontrollers, and building practical hardware projects. My goal is to become a skilled electronics engineer by continuously learning, solving real-world problems, and creating innovative technology.</p>
                 </div>
                 <div class="about-highlights fade-in-up delay-1">
                     <div class="highlight-item">
@@ -83,10 +87,10 @@
                         </div>
                     </div>
                     <div class="highlight-item">
-                        <div class="highlight-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div class="highlight-icon"><i class="fa-solid fa-microchip"></i></div>
                         <div class="highlight-info">
-                            <h3>Focus Area</h3>
-                            <p>Electrical Installation & Maintenance</p>
+                            <h3>Tech Enthusiast</h3>
+                            <p>Passionate about Electronics & Embedded Systems</p>
                         </div>
                     </div>
                 </div>
@@ -127,48 +131,66 @@
         </div>
     </section>
 
-    <!-- Education & Certificates Section -->
+    <!-- Education Section -->
     <section id="education" class="education section">
         <div class="container">
-            <div class="two-column-layout">
-                
-                <!-- Education Timeline -->
-                <div class="timeline-container fade-in-up">
-                    <h2 class="section-title left-align">Education</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
+            <h2 class="section-title fade-in-up">Education</h2>
+            <div class="timeline fade-in-up">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content edu-card">
+                        <div class="edu-header">
+                            <img src="assets/dpi_logo.jpg" alt="Dhaka Polytechnic Institute Logo" class="edu-logo">
+                            <div class="edu-title-group">
                                 <h3 class="timeline-title">Dhaka Polytechnic Institute</h3>
-                                <div class="timeline-subtitle">Diploma in Electronics (Currently 5th Semester)</div>
-                                <div class="timeline-date">Present</div>
-                                <p>Deepening knowledge in electronic devices, digital electronics, instrumentation, and industrial control systems.</p>
+                                <div class="timeline-subtitle">Diploma in Electronics Engineering</div>
+                                <div class="timeline-badge running">Running (5th Semester)</div>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
+                        <p>Deepening knowledge in electronic devices, digital electronics, instrumentation, and industrial control systems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content edu-card">
+                        <div class="edu-header">
+                            <img src="assets/mgbhs_logo.jpg" alt="Motijheel Government Boys' High School Logo" class="edu-logo">
+                            <div class="edu-title-group">
                                 <h3 class="timeline-title">Motijheel Government Boys' High School</h3>
-                                <div class="timeline-subtitle">Secondary School Certificate</div>
-                                <div class="timeline-date">Previous</div>
-                                <p>Built a strong foundation in science and mathematics, sparking my initial interest in electrical and electronic engineering.</p>
+                                <div class="timeline-subtitle">Secondary School Certificate (SSC)</div>
+                                <div class="timeline-badge gpa">GPA: 4.94</div>
                             </div>
                         </div>
+                        <p>Built a strong foundation in science and mathematics, sparking my initial interest in electrical and electronic engineering.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Certificates -->
-                <div class="certificates-container fade-in-up delay-1">
-                    <h2 class="section-title left-align">Certificates</h2>
-                    <div class="certificate-card">
-                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
-                        <div class="cert-details">
-                            <h3>National Skills Certificate</h3>
-                            <p>Verified competency in technical and vocational skills, endorsed by the national certification authority.</p>
-                        </div>
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Certificates</h2>
+            <div class="certificates-grid fade-in-up">
+                <div class="certificate-card">
+                    <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="cert-details">
+                        <h3>National Skills Certificate</h3>
+                        <div class="cert-skill-name">Electrical Installation and Maintenance for Construction</div>
+                        <div class="cert-level"><strong class="highlight-level">Level-2</strong></div>
+                        <p>Verified competency in technical and vocational skills, endorsed by NTVQF national certification authority.</p>
                     </div>
                 </div>
-
+                <div class="certificate-card">
+                    <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="cert-details">
+                        <h3>National Skills Certificate</h3>
+                        <div class="cert-skill-name">Electrical Installation and Maintenance for Construction</div>
+                        <div class="cert-level"><strong class="highlight-level">Level-3</strong></div>
+                        <p>Verified competency in technical and vocational skills, endorsed by NTVQF national certification authority.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,7 +203,7 @@
             
             <div class="contact-links fade-in-up delay-1">
                 <!-- Updated links -->
-                <a href="mailto:sifattamim205@gmail.com" class="contact-btn email-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sifattamim205@gmail.com" class="contact-btn email-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-envelope"></i>
                     <span>Email Me</span>
                 </a>
@@ -192,6 +214,10 @@
                 <a href="https://www.facebook.com/tamim.ahmed.hp" class="contact-btn facebook-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook-f"></i>
                     <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/tamim_ahmed_hp/" class="contact-btn instagram-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
                 </a>
             </div>
         </div>
